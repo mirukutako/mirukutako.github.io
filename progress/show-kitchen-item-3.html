@@ -13,7 +13,7 @@
 </head>
 <body>
   <div id="main-menu">
-    <div class="header-logo"><a class="header-logo__btn more-place-close" href="/"><i class="icon-logo" aria-hidden="true"></i></a></div>
+    <div class="header-logo"><a class="header-logo__btn more-place-close" href="./index.html"><i class="icon-logo" aria-hidden="true"></i></a></div>
     <div class="main-menu__right-block"><a class="main-menu__tel" href="tel:+375296627485"><span>+375 (29) 662-74-85</span></a>
       <button class="menu-btn btn-screen-menu hidden-screen"><span class="menu-btn__item menu-btn__item-1"></span><span class="menu-btn__item menu-btn__item-2"></span><span class="menu-btn__item menu-btn__item-3"></span></button>
     </div>
@@ -32,15 +32,18 @@
     <div class="content-page-body" id="content-page-body">
       <div class="pager-inner">
         <div class="page-tabs">
-          <ul class="page-tabs__menu">
-            <li class="active">seafood bazar</li>
-            <li>meat point</li>
-            <li>fresh bazar</li>
-            <li>туна шоу</li>
-          </ul>
+          <nav class="tab-menu-wrap">
+            <div class="indicator"></div>
+            <ul class="page-tabs__menu">
+              <li class="page-tabs__link active">seafood bazar</li>
+              <li class="page-tabs__link">meat point</li>
+              <li class="page-tabs__link">fresh bazar</li>
+              <li class="page-tabs__link">туна шоу</li>
+            </ul><a class="btn-show-tab-menu">loading...</a>
+          </nav>
           <div class="page-tabs__content">
             <div class="page-tabs__item">
-              <div class="wrap-content wrap-content_no-margin wrap-content_reverse">
+              <div class="wrap-content wrap-content_no-margin">
                 <div class="block-photo" style="background-image:url(&quot;images/occasion-item-inner.jpg&quot;);"></div>
                 <div class="block-text block-text_w50 block-text_left">
                   <div class="block-text__wrap">
@@ -50,14 +53,34 @@
                 </div>
               </div>
               <div class="tab-photo">
-                <div class="tab-photo__item tab-photo__item-1"><img src="images/page-tab-item-1.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-2"><img src="images/page-tab-item-2.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-3"><img src="images/page-tab-item-3.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-4"><img src="images/page-tab-item-4.jpg"/></div>
+                <div class="swiper-container tab-photo-slider">
+                  <div class="swiper-wrapper tab-photo-slider__wrap">
+                    <div class="swiper-slide tab-photo-slide-1">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-1" style="background-image:url(&quot;images/occasion-item-inner.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-2">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-1" style="background-image:url(&quot;images/page-tab-item-1.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-3">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-2" style="background-image:url(&quot;images/page-tab-item-2.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-4">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-3" style="background-image:url(&quot;images/page-tab-item-3.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-5">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-4" style="background-image:url(&quot;images/page-tab-item-4.jpg&quot;);"></div>
+                    </div>
+                  </div>
+                  <div class="tab-photo-nav">
+                    <div class="swiper-pagination pagination-tab-photo"></div>
+                    <div class="swiper-button-next next-tab-photo"></div>
+                    <div class="swiper-button-prev prev-tab-photo"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="page-tabs__item" style="display:none;">
-              <div class="wrap-content wrap-content_no-margin wrap-content_reverse">
+              <div class="wrap-content wrap-content_no-margin">
                 <div class="block-photo" style="background-image:url(&quot;images/occasion-item-inner.jpg&quot;);"></div>
                 <div class="block-text block-text_w50 block-text_left">
                   <div class="block-text__wrap">
@@ -67,14 +90,34 @@
                 </div>
               </div>
               <div class="tab-photo">
-                <div class="tab-photo__item tab-photo__item-1"><img src="images/page-tab-item-1.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-2"><img src="images/page-tab-item-2.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-3"><img src="images/page-tab-item-3.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-4"><img src="images/page-tab-item-4.jpg"/></div>
+                <div class="swiper-container tab-photo-slider">
+                  <div class="swiper-wrapper tab-photo-slider__wrap">
+                    <div class="swiper-slide tab-photo-slide-1">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-1" style="background-image:url(&quot;images/occasion-item-inner.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-2">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-1" style="background-image:url(&quot;images/page-tab-item-1.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-3">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-2" style="background-image:url(&quot;images/page-tab-item-2.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-4">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-3" style="background-image:url(&quot;images/page-tab-item-3.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-5">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-4" style="background-image:url(&quot;images/page-tab-item-4.jpg&quot;);"></div>
+                    </div>
+                  </div>
+                  <div class="tab-photo-nav">
+                    <div class="swiper-pagination pagination-tab-photo"></div>
+                    <div class="swiper-button-next next-tab-photo"></div>
+                    <div class="swiper-button-prev prev-tab-photo"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="page-tabs__item" style="display:none;">
-              <div class="wrap-content wrap-content_no-margin wrap-content_reverse">
+              <div class="wrap-content wrap-content_no-margin">
                 <div class="block-photo" style="background-image:url(&quot;images/occasion-item-inner.jpg&quot;);"></div>
                 <div class="block-text block-text_w50 block-text_left">
                   <div class="block-text__wrap">
@@ -84,14 +127,34 @@
                 </div>
               </div>
               <div class="tab-photo">
-                <div class="tab-photo__item tab-photo__item-1"><img src="images/page-tab-item-1.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-2"><img src="images/page-tab-item-2.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-3"><img src="images/page-tab-item-3.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-4"><img src="images/page-tab-item-4.jpg"/></div>
+                <div class="swiper-container tab-photo-slider">
+                  <div class="swiper-wrapper tab-photo-slider__wrap">
+                    <div class="swiper-slide tab-photo-slide-1">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-1" style="background-image:url(&quot;images/occasion-item-inner.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-2">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-1" style="background-image:url(&quot;images/page-tab-item-1.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-3">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-2" style="background-image:url(&quot;images/page-tab-item-2.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-4">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-3" style="background-image:url(&quot;images/page-tab-item-3.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-5">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-4" style="background-image:url(&quot;images/page-tab-item-4.jpg&quot;);"></div>
+                    </div>
+                  </div>
+                  <div class="tab-photo-nav">
+                    <div class="swiper-pagination pagination-tab-photo"></div>
+                    <div class="swiper-button-next next-tab-photo"></div>
+                    <div class="swiper-button-prev prev-tab-photo"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="page-tabs__item" style="display:none;">
-              <div class="wrap-content wrap-content_no-margin wrap-content_reverse">
+              <div class="wrap-content wrap-content_no-margin">
                 <div class="block-photo" style="background-image:url(&quot;images/occasion-item-inner.jpg&quot;);"></div>
                 <div class="block-text block-text_w50 block-text_left">
                   <div class="block-text__wrap">
@@ -101,10 +164,30 @@
                 </div>
               </div>
               <div class="tab-photo">
-                <div class="tab-photo__item tab-photo__item-1"><img src="images/page-tab-item-1.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-2"><img src="images/page-tab-item-2.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-3"><img src="images/page-tab-item-3.jpg"/></div>
-                <div class="tab-photo__item tab-photo__item-4"><img src="images/page-tab-item-4.jpg"/></div>
+                <div class="swiper-container tab-photo-slider">
+                  <div class="swiper-wrapper tab-photo-slider__wrap">
+                    <div class="swiper-slide tab-photo-slide-1">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-1" style="background-image:url(&quot;images/occasion-item-inner.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-2">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-1" style="background-image:url(&quot;images/page-tab-item-1.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-3">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-2" style="background-image:url(&quot;images/page-tab-item-2.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-4">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-3" style="background-image:url(&quot;images/page-tab-item-3.jpg&quot;);"></div>
+                    </div>
+                    <div class="swiper-slide tab-photo-slide-5">
+                      <div class="tab-photo-slider__slide tab-photo-slider__slide-4" style="background-image:url(&quot;images/page-tab-item-4.jpg&quot;);"></div>
+                    </div>
+                  </div>
+                  <div class="tab-photo-nav">
+                    <div class="swiper-pagination pagination-tab-photo"></div>
+                    <div class="swiper-button-next next-tab-photo"></div>
+                    <div class="swiper-button-prev prev-tab-photo"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
