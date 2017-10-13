@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>BOBR</title>
+    <meta name="author" content="BOBR">
+    <meta name="description" content="ГЛАВНАЯ">
+    <meta name="keywords" content="Главная">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>.preloader-block{
+	position: fixed;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	background: #ffffff;
+}
+.preloader-block__logo{
+	width: 70%;
+	text-align: center;
+	position:absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.preloader-block__logo img{
+	max-width: 100%;
+}
+#fountainG{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width:234px;
+	height:28px;
+	margin:auto;
+}
+
+.fountainG{
+	position:absolute;
+	top:0;
+	background-color:#ffffff;
+	width:28px;
+	height:28px;
+	animation-name:bounce_fountainG;
+	-o-animation-name:bounce_fountainG;
+	-ms-animation-name:bounce_fountainG;
+	-webkit-animation-name:bounce_fountainG;
+	-moz-animation-name:bounce_fountainG;
+	animation-duration:1.035s;
+	-o-animation-duration:1.035s;
+	-ms-animation-duration:1.035s;
+	-webkit-animation-duration:1.035s;
+	-moz-animation-duration:1.035s;
+	animation-iteration-count:infinite;
+	-o-animation-iteration-count:infinite;
+	-ms-animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+	-o-animation-direction:normal;
+	-ms-animation-direction:normal;
+	-webkit-animation-direction:normal;
+	-moz-animation-direction:normal;
+	transform:scale(.3);
+	-o-transform:scale(.3);
+	-ms-transform:scale(.3);
+	-webkit-transform:scale(.3);
+	-moz-transform:scale(.3);
+	border-radius:19px;
+	-o-border-radius:19px;
+	-ms-border-radius:19px;
+	-webkit-border-radius:19px;
+	-moz-border-radius:19px;
+}
+
+#fountainG_1{
+	left:0;
+	animation-delay:0.416s;
+	-o-animation-delay:0.416s;
+	-ms-animation-delay:0.416s;
+	-webkit-animation-delay:0.416s;
+	-moz-animation-delay:0.416s;
+}
+
+#fountainG_2{
+	left:29px;
+	animation-delay:0.5225s;
+	-o-animation-delay:0.5225s;
+	-ms-animation-delay:0.5225s;
+	-webkit-animation-delay:0.5225s;
+	-moz-animation-delay:0.5225s;
+}
+
+#fountainG_3{
+	left:58px;
+	animation-delay:0.619s;
+	-o-animation-delay:0.619s;
+	-ms-animation-delay:0.619s;
+	-webkit-animation-delay:0.619s;
+	-moz-animation-delay:0.619s;
+}
+
+#fountainG_4{
+	left:88px;
+	animation-delay:0.7255s;
+	-o-animation-delay:0.7255s;
+	-ms-animation-delay:0.7255s;
+	-webkit-animation-delay:0.7255s;
+	-moz-animation-delay:0.7255s;
+}
+
+#fountainG_5{
+	left:117px;
+	animation-delay:0.832s;
+	-o-animation-delay:0.832s;
+	-ms-animation-delay:0.832s;
+	-webkit-animation-delay:0.832s;
+	-moz-animation-delay:0.832s;
+}
+
+#fountainG_6{
+	left:146px;
+	animation-delay:0.9385s;
+	-o-animation-delay:0.9385s;
+	-ms-animation-delay:0.9385s;
+	-webkit-animation-delay:0.9385s;
+	-moz-animation-delay:0.9385s;
+}
+
+#fountainG_7{
+	left:175px;
+	animation-delay:1.035s;
+	-o-animation-delay:1.035s;
+	-ms-animation-delay:1.035s;
+	-webkit-animation-delay:1.035s;
+	-moz-animation-delay:1.035s;
+}
+
+#fountainG_8{
+	left:205px;
+	animation-delay:1.1415s;
+	-o-animation-delay:1.1415s;
+	-ms-animation-delay:1.1415s;
+	-webkit-animation-delay:1.1415s;
+	-moz-animation-delay:1.1415s;
+}
+
+@keyframes bounce_fountainG{
+	0%{
+		transform:scale(1);
+		background-color:rgba(204,52,51,0.44);
+	}
+
+	100%{
+		transform:scale(.3);
+		background-color:rgb(204,52,51);
+	}
+}
+
+@-o-keyframes bounce_fountainG{
+	0%{
+		-o-transform:scale(1);
+		background-color:rgba(204,52,51,0.44);
+	}
+
+	100%{
+		-o-transform:scale(.3);
+		background-color:rgb(204,52,51);
+	}
+}
+
+@-ms-keyframes bounce_fountainG{
+	0%{
+		-ms-transform:scale(1);
+		background-color:rgba(204,52,51,0.44);
+	}
+
+	100%{
+		-ms-transform:scale(.3);
+		background-color:rgb(204,52,51);
+	}
+}
+
+@-webkit-keyframes bounce_fountainG{
+	0%{
+		-webkit-transform:scale(1);
+		background-color:rgba(204,52,51,0.44);
+	}
+
+	100%{
+		-webkit-transform:scale(.3);
+		background-color:rgb(204,52,51);
+	}
+}
+
+@-moz-keyframes bounce_fountainG{
+	0%{
+		-moz-transform:scale(1);
+		background-color:rgba(204,52,51,0.44);
+	}
+
+	100%{
+		-moz-transform:scale(.3);
+		background-color:rgb(204,52,51);
+	}
+}
+    </style>
+  </head>
+  <body>
+    <div class="preloader-block">
+      <div class="preloader-block__logo"><img src="images/logo-head.png" alt="logotype"></div>
+      <div id="fountainG">
+        <div class="fountainG" id="fountainG_1"></div>
+        <div class="fountainG" id="fountainG_2"></div>
+        <div class="fountainG" id="fountainG_3"></div>
+        <div class="fountainG" id="fountainG_4"></div>
+        <div class="fountainG" id="fountainG_5"></div>
+        <div class="fountainG" id="fountainG_6"></div>
+        <div class="fountainG" id="fountainG_7"></div>
+        <div class="fountainG" id="fountainG_8"></div>
+      </div>
+    </div>
+    <div class="pager-inner">
+      <div class="header-banner"><img src="images/banner-top.jpg" alt="banner header"/></div>
+      <header>
+        <div class="conten-wrap">
+          <div class="header-wrap"><a class="header-link" href="#"><img src="images/logo-head.png" alt="logotype"/></a>
+            <div class="header-menu">
+              <nav class="header-menu__nav"><a href="">О нас</a><a href="">Написать письмо</a><a href="">Реклама на портале</a></nav>
+              <div class="header-menu__search">
+                <form action="/action">
+                  <input type="search"/>
+                  <button class="header-menu__sub-btn" type="submit">Найти</button>
+                </form>
+              </div>
+            </div>
+            <div class="header-user">
+              <div class="header-user_authorized">
+                <div class="header-user__menu"><a href="">Личный кабинет</a><a href="">Профиль</a><a href="">Почта</a><a href="">Выйти</a></div>
+                <div class="header-user__avatar"><img src="images/user-ava.png" alt="user_avatar"/>
+                  <p>Добрый день<span class="header-user__name">admin-N</span></p>
+                </div>
+              </div>
+              <div class="header-user_unauthorized">
+                <form class="header-user__form" action="/action">
+                  <div class="header-user__input-wrap">
+                    <input type="text" required="required"/>
+                    <input type="password" required="required"/><a class="header-user__lost-password" href="">Не помню</a>
+                  </div>
+                  <div class="header-user__btn-wrap">
+                    <button class="header-menu__sub-btn" type="submit">Войти</button><a class="header-menu__soc-btn" href="#vk"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="header-menu__soc-btn" href=""><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a><a class="header-user__registration" href="#">Регистрация</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="main-menu">
+        <div class="main-menu__wrap"><a class="main-menu__sticky-btn" href="/"><img src="images/logo-white.png" alt="logo-sticky"/></a>
+          <div class="main-menu__link-desktop"><a class="main-menu__link" href="#">Новости</a><a class="main-menu__link" href="#">Наш Бобруйск</a><a class="main-menu__link" href="#">Каталог организаций</a><a class="main-menu__link" href="#">Отдых</a><a class="main-menu__link" href="#">Работа</a><a class="main-menu__link" href="#">Объявления</a><a class="main-menu__link" href="#">Афиша</a><a class="main-menu__link" href="#">Общение</a><a class="main-menu__link main-menu__link_new" href="#">Навигатор</a></div>
+          <div class="main-menu__link-mobile"><a class="main-menu__mob-logo" href="/"><img src="images/logo-white.png" alt="logo-sticky"/></a>
+            <button class="main-menu__mob-menu show-mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          </div>
+          <div class="main-menu__user-wrap"><a class="main-menu__user-btn show-user-menu" href="#"><img src="images/user-ava.png" alt="user_avatar" style="display:none;"/><span class="main-menu__guest"><i class="fa fa-user-secret" aria-hidden="true"></i></span></a></div>
+        </div>
+      </nav>
+      <div class="ticker-block">
+        <p>бегущая строка</p>
+      </div>
+      <div class="conten-wrap conten-wrap_bg-grey">
+        <div class="wrap-card">
+          <div class="side-bar">
+            <div class="side-bar-menu"><a class="reclame-btn" href="#">Реклама </a>
+              <div class="reclame-wrap"><a class="reclame-item" href="#"><img src="images/reclame-1.jpg" alt="reclame-1.jpg"/></a><a class="reclame-item" href="#"><img src="images/reclame-2.jpg" alt="reclame-2.jpg"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="main-content">
+            <div class="voting"><a class="subsection-title subsection-title_voting" href="#">ГОЛОСОВАНИЕ</a>
+              <div class="voting__question">
+                <p>Вопрос:&nbsp;<span id="question">Частный бизнес в Бобруйске: реален ли он?</span></p>
+              </div>
+              <div class="voting__block"><a class="voting__answer"> <span class="voting__text">Да, я хочу открыть свое дело</span><span class="voting__percent" style="display:none;">20</span></a><a class="voting__answer"> <span class="voting__text">Собственный бизнес у меня уже есть</span><span class="voting__percent" style="display:none;">5</span></a><a class="voting__answer"> <span class="voting__text">Нет уверенности, что все получится</span><span class="voting__percent" style="display:none;">11</span></a><a class="voting__answer"> <span class="voting__text">У меня было свое дело</span><span class="voting__percent" style="display:none;">53</span></a><a class="voting__answer"> <span class="voting__text">Интерес к бизнесу отсутствует</span><span class="voting__percent" style="display:none;">50</span></a><a class="voting__answer"> <span class="voting__text">Есть желание, но нет возможностей (средств, условий и т.п.)</span><span class="voting__percent" style="display:none;">8</span></a><a class="voting__answer"> <span class="voting__text">Не верю, что можно создать свой бизнес</span><span class="voting__percent" style="display:none;">3</span></a><a class="voting__answer"> <span class="voting__text">Мне нравится моя работа</span><span class="voting__percent" style="display:none;">3</span></a><a class="voting__answer"> <span class="voting__text">Другое</span><span class="voting__percent" style="display:none;">1</span></a></div>
+              <div class="something-about-theme">Вам есть что сказать по данной теме? <a href="">Напишите нам в комментариях!</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="conten-wrap wrap-card top-news"><a class="content-card content-card_top-news" href="#">
+          <div class="content-card__image"><img src="images/news-bg.jpg" alt="news-bg.jpg"/></div>
+          <div class="content-card__head">
+            <div class="content-card__tags"><span class="card-dags">Здоровье, красота, мода</span></div>
+            <div class="content-card__activity">
+              <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">2094</span></div>
+              <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">10</span></div>
+            </div>
+          </div>
+          <div class="content-card__body content-card__body_top-news">
+            <h2 class="content-card__title content-card__title_top-news">Ученые сообщили о генетической опасности вегетарианства</h2>
+            <div class="content-card__more">
+              <div class="content-card__date">11.04.2016</div>
+              <div class="content-card__icons">
+                <div class="card-icon"><i class="fa fa-camera"></i></div>
+              </div>
+            </div>
+          </div></a><a class="content-card content-card_top-news" href="#">
+          <div class="content-card__image"><img src="images/news-bg.jpg" alt="news-bg.jpg"/></div>
+          <div class="content-card__head">
+            <div class="content-card__tags"><span class="card-dags">Здоровье, красота, мода</span></div>
+            <div class="content-card__activity">
+              <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">2094</span></div>
+              <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">10</span></div>
+            </div>
+          </div>
+          <div class="content-card__body content-card__body_top-news">
+            <h2 class="content-card__title content-card__title_top-news">Беларусь избрана в органы Экономического и социального совета ООН</h2>
+            <div class="content-card__more">
+              <div class="content-card__date">11.04.2016</div>
+              <div class="content-card__icons">
+                <div class="card-icon"><i class="fa fa-camera"></i></div>
+              </div>
+            </div>
+          </div></a><a class="content-card content-card_top-news" href="#">
+          <div class="content-card__image"><img src="images/news-bg.jpg" alt="news-bg.jpg"/></div>
+          <div class="content-card__head">
+            <div class="content-card__tags"><span class="card-dags">Здоровье, красота, мода</span></div>
+            <div class="content-card__activity">
+              <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">2094</span></div>
+              <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">10</span></div>
+            </div>
+          </div>
+          <div class="content-card__body content-card__body_top-news">
+            <h2 class="content-card__title content-card__title_top-news">Госпрограмма &quot;Энергосбережение&quot; на 2016-2020 годы утверждена в Беларуси</h2>
+            <div class="content-card__more">
+              <div class="content-card__date">11.04.2016</div>
+              <div class="content-card__icons">
+                <div class="card-icon"><i class="fa fa-camera"></i></div>
+              </div>
+            </div>
+          </div></a>
+      </div>
+      <div class="conten-wrap conten-wrap_bg-grey conten-wrap_add-p wrap-card">
+        <div class="currency"><a class="subsection-title subsection-title_currency" href="#">КУРСЫ ВАЛЮТ</a>
+          <div class="currency__head">
+            <h5 class="currency__title">Лучшие курсы валют по г.Бобруйску</h5>
+            <p class="currency__update">Обновлено: <span id="currency-update">11.04.2016  9:28:29</span></p>
+          </div>
+          <table class="currency__table">
+            <thead>
+              <tr>
+                <th>ВАЛЮТА</th>
+                <th>ПОКУПКА</th>
+                <th>ПРОДАЖА</th>
+                <th>НБРБ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> <img src="images/usa.jpg" alt="usa"/>USD</td>
+                <td>20150</td>
+                <td>20000</td>
+                <td>20236</td>
+              </tr>
+              <tr>
+                <td> <img src="images/euro.jpg" alt="euro"/>EUR</td>
+                <td>22870</td>
+                <td>22750</td>
+                <td>22977</td>
+              </tr>
+              <tr>
+                <td> <img src="images/rus.jpg" alt="rus"/>RUB</td>
+                <td>297</td>
+                <td>297</td>
+                <td>295.4</td>
+              </tr>
+            </tbody>
+          </table><a class="view-more-btn currency__more" href="#">Все курсы</a>
+        </div>
+        <div class="weather"><a class="subsection-title subsection-title_weather" href="#">ПОГОДА В БОБРУЙСКЕ</a>
+          <div class="weather__desc">
+            <div class="weather__degrees">+9 <sup>0&nbsp;</sup>С</div>
+            <table class="weather__table">
+              <tbody>
+                <tr>
+                  <td class="weather-characteristic">ВЕТЕР</td>
+                  <td class="weather-data"><span id="weather-wind">3</span>&nbsp;м/с св</td>
+                </tr>
+                <tr>
+                  <td class="weather-characteristic">ДАВЛЕНИЕ</td>
+                  <td class="weather-data"><span id="weather-pressure">747</span>&nbsp;мм рт.ст.</td>
+                </tr>
+                <tr>
+                  <td class="weather-characteristic">ВЛАЖНОСТЬ</td>
+                  <td class="weather-data"><span id="weather-wetness">74%</span>&nbsp;влажн.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="weather__info">
+            <div class="weather__icon"><img src="images/weather-icon.png" alt="weather-icon"/>
+              <p>Ясно</p>
+            </div>
+            <div class="weather__more"><a class="view-more-btn weather__more" href="#">Подробнее о погоде</a></div>
+          </div>
+        </div>
+        <div class="coming-soon"><a class="subsection-title subsection-title_coming-soon" href="#">СКОРО</a>
+          <div class="coming-soon__wrap">
+            <div class="col-hourly">
+              <div class="coming-soon__hour">18:00 </div>
+              <div class="coming-soon__icon"><img src="images/rain.png" title="Сильная Облачность" alt="Сильная Облачность"/></div>
+              <div class="coming-soon__temperature">14.6°</div>
+              <div class="coming-soon__temperature-bg" style="height:4em;top:0em;"></div>
+            </div>
+            <div class="col-hourly">
+              <div class="coming-soon__hour">19:00 </div>
+              <div class="coming-soon__icon"><img src="images/cloudy.png" title="Сильная Облачность" alt="Сильная Облачность"/></div>
+              <div class="coming-soon__temperature">13.6°</div>
+              <div class="coming-soon__temperature-bg" style="height: 3.38em;top: 0.62em;"></div>
+            </div>
+            <div class="col-hourly">
+              <div class="coming-soon__hour">20:00 </div>
+              <div class="coming-soon__icon"><img src="images/cloudy.png" title="Сильная Облачность" alt="Сильная Облачность"/></div>
+              <div class="coming-soon__temperature">15.0°</div>
+              <div class="coming-soon__temperature-bg" style="height: 2.76em;top: 1.24em;"></div>
+            </div>
+            <div class="col-hourly">
+              <div class="coming-soon__hour">21:00 </div>
+              <div class="coming-soon__icon"><img src="images/partly-cloudy-night.png" title="Сильная Облачность" alt="Сильная Облачность"/></div>
+              <div class="coming-soon__temperature">10.2°</div>
+              <div class="coming-soon__temperature-bg" style="height: 2.76em;top: 1.24em;"></div>
+            </div>
+            <div class="col-hourly">
+              <div class="coming-soon__hour">22:00 </div>
+              <div class="coming-soon__icon"><img src="images/partly-cloudy-night.png" title="Сильная Облачность" alt="Сильная Облачность"/></div>
+              <div class="coming-soon__temperature">9.6°</div>
+              <div class="coming-soon__temperature-bg" style="height: 2.06em;top: 1.94em;"></div>
+            </div>
+            <div class="col-hourly">
+              <div class="coming-soon__hour">23:00 </div>
+              <div class="coming-soon__icon"><img src="images/rain.png" title="Сильная Облачность" alt="Сильная Облачность"/></div>
+              <div class="coming-soon__temperature">7.8°</div>
+              <div class="coming-soon__temperature-bg" style="height: 1em;top: 3em;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="conten-wrap">
+        <section class="news">
+          <h4 hidden>новости</h4>
+          <div class="section-menu"><a class="section-menu__title" href="#">НОВОСТИ</a>
+            <div class="section-menu__wrap">
+              <div class="section-menu__item"><a href="#">Последние новости</a></div>
+              <div class="section-menu__item"><a href="#">Новости Бобруйска</a></div>
+              <div class="section-menu__item"><a href="#">Сообщения УВД, ГАИ, МЧС</a></div>
+              <div class="section-menu__item"><a href="#">Спорт</a></div>
+              <div class="section-menu__item"><a href="#">Актуально</a></div>
+              <div class="section-menu__item"><a href="#">Культура, отдых, развлечения</a></div>
+              <div class="section-menu__item"><a href="#">Автоновости</a></div>
+              <div class="section-menu__item"><a href="#">Калейдоскоп</a></div>
+              <div class="section-menu__item"><a href="#">Официально</a></div>
+              <div class="section-menu__item"><a href="#">Бизнес и политика</a></div>
+              <div class="section-menu__item"><a href="#">Здоровье, красота, мода</a></div>
+              <div class="section-menu__item"><a href="#">Новости компаний</a></div>
+              <div class="section-menu__item"><a href="#">Городские объявления</a></div>
+              <div class="section-menu__item"><a href="#">Образование</a></div>
+              <div class="section-menu__item"><a href="#">Интернет</a></div>
+              <div class="section-menu__item"><a href="#">Религия</a></div>
+              <div class="section-menu__item"><a href="#">Новости сайта</a></div>
+            </div>
+          </div>
+          <div class="wrap-card">
+            <div class="side-bar"><a class="side-bar-item side-bar-item_actual-news" href="">
+                <div class="side-bar-item__image"><img src="images/news-bg.jpg" alt="news-bg.jpg"/></div>
+                <div class="side-bar-item__body">
+                  <p class="side-bar-item__date side-bar-item__date_actual-news">11.04.2016</p>
+                  <h3 class="side-bar-item__title side-bar-item__title_actual-news">Ученые сообщили о генетической опасности вегетарианства</h3>
+                  <div class="side-bar-item__footer">
+                    <div class="side-bar-item__tags"><span>Здоровье, красота, мода</span></div>
+                    <div class="side-bar-item__activity">
+                      <div class="side-bar-item__view"><span class="side-bar-item-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="side-bar-item-view-count">10</span></div>
+                      <div class="side-bar-item__comment"><span class="side-bar-item-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="side-bar-item-comment-count">2940</span></div>
+                    </div>
+                  </div>
+                </div></a>
+              <div class="side-bar-menu"><a class="side-bar-menu__link" href="">Самые просматриваемые новости</a><a class="side-bar-menu__link" href="">Самые обсуждаемые новости</a><a class="side-bar-menu__link" href="">Последние комментарии</a><a class="reclame-btn" href="#">Реклама </a>
+                <div class="reclame-wrap"><a class="reclame-item" href="#"><img src="images/reclame-1.jpg" alt="reclame-1.jpg"/></a>
+                </div>
+              </div><a class="send-news-btn" href="#">Прислать новость<i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+            <div class="main-content news-wrap">
+              <div class="swiper-container news-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-1.jpg" alt="news-1.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Бизнес и политика</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">122</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">4</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Беларусь избрана в органы Экономического и социального совета ООН</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-2.jpg" alt="news-2.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Спорт</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">2094</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">112</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Минский стадион &quot;Динамо&quot; может получить высшую категорию УЕФА</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-3.jpg" alt="news-3.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Калейдоскоп</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">1985</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">50</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Госпрограмма &quot;Энергосбережение&quot; на 2016-2020 годы утверждена в Беларуси</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-1.jpg" alt="news-1.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Бизнес и политика</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">3200</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">101</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Беларусь избрана в органы Экономического и социального совета ООН</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-2.jpg" alt="news-2.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Спорт</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">2001</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">10</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Минский стадион &quot;Динамо&quot; может получить высшую категорию УЕФА</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-3.jpg" alt="news-3.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Калейдоскоп</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">1130</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">40</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Госпрограмма &quot;Энергосбережение&quot; на 2016-2020 годы утверждена в Беларуси</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-1.jpg" alt="news-1.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Бизнес и политика</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">122</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">4</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Беларусь избрана в органы Экономического и социального совета ООН</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-2.jpg" alt="news-2.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Спорт</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">2094</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">112</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Минский стадион &quot;Динамо&quot; может получить высшую категорию УЕФА</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-3.jpg" alt="news-3.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Калейдоскоп</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">1985</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">50</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Госпрограмма &quot;Энергосбережение&quot; на 2016-2020 годы утверждена в Беларуси</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-1.jpg" alt="news-1.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Бизнес и политика</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">3200</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">101</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Беларусь избрана в органы Экономического и социального совета ООН</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-2.jpg" alt="news-2.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Спорт</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">2001</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">10</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Минский стадион &quot;Динамо&quot; может получить высшую категорию УЕФА</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/news-3.jpg" alt="news-3.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Калейдоскоп</span></div>
+                        <div class="content-card__activity">
+                          <div class="content-card__view"><span class="card-view-icon"><i class="fa fa-eye" aria-hidden="true"></i></span><span class="card-view-count">1130</span></div>
+                          <div class="content-card__comment"><span class="card-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="card-comment-count">40</span></div>
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Госпрограмма &quot;Энергосбережение&quot; на 2016-2020 годы утверждена в Беларуси</h2>
+                        <div class="content-card__more">
+                          <div class="content-card__date">11.04.2016</div>
+                          <div class="content-card__icons">
+                            <div class="card-icon"><i class="fa fa-camera"></i></div>
+                            <div class="card-icon"><i class="fa fa-video-camera"></i></div>
+                          </div>
+                        </div>
+                      </div></a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev news-slider-prev swiper-bobr-prev">
+                  <div class="swiper-triangl-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                </div>
+                <div class="swiper-button-next news-slider-next swiper-bobr-next">
+                  <div class="swiper-triangl-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </div>
+              </div>
+              <div class="setion-link"><a class="setion-link__item" href="#">в раздел актуально</a><a class="setion-link__item" href="#">в раздел новости</a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="conten-wrap conten-wrap_bg-grey conten-wrap_add-p">
+        <section class="last-comment">
+          <h4 hidden>последние комментарии</h4><a class="subsection-title subsection-title_comment" href="#">ПОСЛЕДНИЕ КОММЕНТАРИИ</a>
+          <div class="last-comment__item">
+            <div class="last-comment__head">
+              <div class="last-comment__date">
+                <p>11:18 26.04.2016</p>
+              </div>
+              <div class="last-comment__author">
+                <p>Автор:&nbsp;<span class="last-comment-author">Степная_трава</span></p>
+              </div>
+            </div>
+            <div class="last-comment__body"><a class="last-comment__text" href="#">Хочу выразить благодарность всем сотрудникам данного СЦ. Обращалась в связи с поломкой мобильного телефона. Ремонт был проведён на высочайшем уровне и в краткие сроки. Спасибо! Желаю Вам процветания и адекватных клиентов!</a></div>
+            <div class="last-comment__footer">
+              <div class="last-comment__icon"><img src="images/last-comment-icon-1.jpg" alt="last-comment-icon-1.jpg"/></div>
+              <div class="last-comment__category">
+                <div class="last-comment__crumbs"><a href="#">Каталог организаций</a><span class="last-comment__devider">&nbsp;/&nbsp;</span><a href="#">услуги</a><span class="last-comment__devider">&nbsp;/&nbsp;</span>
+                </div>
+                <div class="last-comment__short">
+                  <p>Сервисный центр «Энтер-Компьютерс». Обслуживание и профессиональный ремонт офисной техники</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="last-comment__item">
+            <div class="last-comment__head">
+              <div class="last-comment__date">
+                <p>11:18 26.04.2016</p>
+              </div>
+              <div class="last-comment__author">
+                <p>Автор:&nbsp;<span class="last-comment-author">Степная_трава</span></p>
+              </div>
+            </div>
+            <div class="last-comment__body"><a class="last-comment__text" href="#">Именно такой политики придерживаются в Северной Корее) Давайте не будем заимствовать их традиции.</a></div>
+            <div class="last-comment__footer">
+              <div class="last-comment__icon"><img src="images/last-comment-icon-2.jpg" alt="last-comment-icon-2.jpg"/></div>
+              <div class="last-comment__category">
+                <div class="last-comment__crumbs"><a href="#">Новости</a><span class="last-comment__devider">&nbsp;/&nbsp;</span><a href="#">Новости Бобруйска</a><span class="last-comment__devider">&nbsp;/&nbsp;</span>
+                </div>
+                <div class="last-comment__short">
+                  <p>За получение взятки осуждены должностные лица Бобруйского горисполкома</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="last-comment__item">
+            <div class="last-comment__head">
+              <div class="last-comment__date">
+                <p>11:18 26.04.2016</p>
+              </div>
+              <div class="last-comment__author">
+                <p>Автор:&nbsp;<span class="last-comment-author">Степная_трава</span></p>
+              </div>
+            </div>
+            <div class="last-comment__body"><a class="last-comment__text" href="#">Хочу выразить благодарность всем сотрудникам данного СЦ. Обращалась в связи с поломкой мобильного телефона. Ремонт был проведён на высочайшем уровне и в краткие сроки. Спасибо! Желаю Вам процветания и адекватных клиентов!</a></div>
+            <div class="last-comment__footer">
+              <div class="last-comment__icon"><img src="images/last-comment-icon-1.jpg" alt="last-comment-icon-1.jpg"/></div>
+              <div class="last-comment__category">
+                <div class="last-comment__crumbs"><a href="#">Каталог организаций</a><span class="last-comment__devider">&nbsp;/&nbsp;</span><a href="#">услуги</a><span class="last-comment__devider">&nbsp;/&nbsp;</span>
+                </div>
+                <div class="last-comment__short">
+                  <p>Сервисный центр «Энтер-Компьютерс». Обслуживание и профессиональный ремонт офисной техники</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="last-comment__item">
+            <div class="last-comment__head">
+              <div class="last-comment__date">
+                <p>11:18 26.04.2016</p>
+              </div>
+              <div class="last-comment__author">
+                <p>Автор:&nbsp;<span class="last-comment-author">mebelpodzakaz</span></p>
+              </div>
+            </div>
+            <div class="last-comment__body"><a class="last-comment__text" href="#">Через год колхоз поднимать будут</a></div>
+            <div class="last-comment__footer">
+              <div class="last-comment__icon"><img src="images/last-comment-icon-2.jpg" alt="last-comment-icon-2.jpg"/></div>
+              <div class="last-comment__category">
+                <div class="last-comment__crumbs"><a href="#">Новости</a><span class="last-comment__devider">&nbsp;/&nbsp;</span><a href="#">Новости Бобруйска</a><span class="last-comment__devider">&nbsp;/&nbsp;</span>
+                </div>
+                <div class="last-comment__short">
+                  <p>За получение взятки осуждены должностные лица Бобруйского горисполкома</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="last-comment__item">
+            <div class="last-comment__head">
+              <div class="last-comment__date">
+                <p>11:18 26.04.2016</p>
+              </div>
+              <div class="last-comment__author">
+                <p>Автор:&nbsp;<span class="last-comment-author">mebelpodzakaz</span></p>
+              </div>
+            </div>
+            <div class="last-comment__body"><a class="last-comment__text" href="#">Да Вы что??!... Страна с &quot;неразвитой экономикой&quot; &quot;изнывающая под гнётом санкций&quot; спокойно проводит Чёткую и Эффективную военную операцию в Сирии, имеет стабильный рост ВВП, строит такие объекты, как Космодром, вплотную занялась...</a></div>
+            <div class="last-comment__footer">
+              <div class="last-comment__icon"><img src="images/last-comment-icon-3.jpg" alt="last-comment-icon-3.jpg"/></div>
+              <div class="last-comment__category">
+                <div class="last-comment__crumbs"><a href="#">Новости</a><span class="last-comment__devider">&nbsp;/&nbsp;</span><a href="#">Калейдоскоп</a><span class="last-comment__devider">&nbsp;/&nbsp;</span>
+                </div>
+                <div class="last-comment__short">
+                  <p>Минторг опять запретил поварам изменять рецептуры приготовления блюд</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="last-comment__item">
+            <div class="last-comment__head">
+              <div class="last-comment__date">
+                <p>11:18 26.04.2016</p>
+              </div>
+              <div class="last-comment__author">
+                <p>Автор:&nbsp;<span class="last-comment-author">mebelpodzakaz</span></p>
+              </div>
+            </div>
+            <div class="last-comment__body"><a class="last-comment__text" href="#">Через год колхоз поднимать будут</a></div>
+            <div class="last-comment__footer">
+              <div class="last-comment__icon"><img src="images/last-comment-icon-2.jpg" alt="last-comment-icon-2.jpg"/></div>
+              <div class="last-comment__category">
+                <div class="last-comment__crumbs"><a href="#">Новости</a><span class="last-comment__devider">&nbsp;/&nbsp;</span><a href="#">Новости Бобруйска</a><span class="last-comment__devider">&nbsp;/&nbsp;</span>
+                </div>
+                <div class="last-comment__short">
+                  <p>За получение взятки осуждены должностные лица Бобруйского горисполкома</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="last-comment__gutter"></div>
+          <div class="setion-link"><a class="setion-link__item" href="#">в раздел комментарии</a></div>
+        </section>
+      </div>
+      <div class="stretch-wrap"><a class="wikibobr" href="#">WIKIBOBR.BY</a></div>
+      <div class="conten-wrap">
+        <section class="affiche">
+          <h4 hidden>афиша</h4>
+          <div class="section-menu"><a class="section-menu__title" href="#">афиша</a>
+            <div class="section-menu__wrap">
+              <div class="section-menu__item"><a href="#">Вся афиша</a></div>
+              <div class="section-menu__item"><a href="#">Концерты</a></div>
+              <div class="section-menu__item"><a href="#">Спортивные мероприятия</a></div>
+              <div class="section-menu__item"><a href="#">ТВ программа</a></div>
+              <div class="section-menu__item"><a href="#">Кино</a></div>
+              <div class="section-menu__item"><a href="#">Общегородские мероприятия</a></div>
+              <div class="section-menu__item"><a href="#">Мероприятия учреждений культуры</a></div>
+              <div class="section-menu__item"><a href="#">Бобруйск-Арена</a></div>
+              <div class="section-menu__item"><a href="#">Театр</a></div>
+              <div class="section-menu__item"><a href="#">Дискотеки, вечеринки</a></div>
+              <div class="section-menu__item"><a href="#">Выставки, ярмарки</a></div>
+            </div>
+          </div>
+          <div class="wrap-card">
+            <div class="side-bar"><a class="side-bar-item side-bar-item_affiche" href="">
+                <div class="side-bar-item__image"><img src="images/afisha-bg.jpg" alt="afisha-bg.jpg"/></div>
+                <div class="side-bar-item__body">
+                  <p class="side-bar-item__date side-bar-item__date_affiche">16 апреля 2016 г.</p>
+                  <h3 class="side-bar-item__title side-bar-item__title_affiche">Андрей Сенькевич. В ожидании чудес</h3>
+                  <div class="side-bar-item__footer">
+                    <div class="side-bar-item__tags"><span>Концерты</span></div>
+                    <div class="side-bar-item__activity">
+                      <div class="side-bar-item__comment"><span class="side-bar-item-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="side-bar-item-comment-count">0</span></div>
+                    </div>
+                  </div>
+                </div></a>
+              <div class="side-bar-menu"><a class="reclame-btn" href="#">Реклама </a>
+                <div class="reclame-wrap"><a class="reclame-item" href="#"><img src="images/reclame-2.jpg" alt="reclame-2.jpg"/></a>
+                </div>
+              </div>
+            </div>
+            <div class="main-content affiche-wrap">
+              <div class="swiper-container affiche-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-1.jpg" alt="afisha-1.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Кино</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Лунный флаг 3D </h2>
+                        <p class="content-card__desc">К-р Товарищ (Бобруйск)</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">10.04.2016 - 14.04.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-2.jpg" alt="afisha-2.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Театр</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">«При чужих свечах», Н. Птушкина Криминальная комед­ия </h2>
+                        <p class="content-card__desc">Театр Бобруйска</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">21.04.2016 - 24.04.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-3.jpg" alt="afisha-3.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Концерт</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Образцовый ансамбль танца «Чабарок». Отчетный концерт</h2>
+                        <p class="content-card__desc">«Дворец искусств»</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">15.05.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-1.jpg" alt="afisha-1.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Кино</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Лунный флаг 3D </h2>
+                        <p class="content-card__desc">К-р Товарищ (Бобруйск)</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">10.04.2016 - 14.04.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-2.jpg" alt="afisha-2.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Театр</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">«При чужих свечах», Н. Птушкина Криминальная комед­ия </h2>
+                        <p class="content-card__desc">Театр Бобруйска</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">21.04.2016 - 24.04.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-3.jpg" alt="afisha-3.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Концерт</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Образцовый ансамбль танца «Чабарок». Отчетный концерт</h2>
+                        <p class="content-card__desc">«Дворец искусств»</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">15.05.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-1.jpg" alt="afisha-1.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Кино</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Лунный флаг 3D </h2>
+                        <p class="content-card__desc">К-р Товарищ (Бобруйск)</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">10.04.2016 - 14.04.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-2.jpg" alt="afisha-2.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Театр</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">«При чужих свечах», Н. Птушкина Криминальная комед­ия </h2>
+                        <p class="content-card__desc">Театр Бобруйска</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">21.04.2016 - 24.04.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-3.jpg" alt="afisha-3.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Концерт</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Образцовый ансамбль танца «Чабарок». Отчетный концерт</h2>
+                        <p class="content-card__desc">«Дворец искусств»</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">15.05.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-1.jpg" alt="afisha-1.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Кино</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Лунный флаг 3D </h2>
+                        <p class="content-card__desc">К-р Товарищ (Бобруйск)</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">10.04.2016 - 14.04.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-2.jpg" alt="afisha-2.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Театр</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">«При чужих свечах», Н. Птушкина Криминальная комед­ия </h2>
+                        <p class="content-card__desc">Театр Бобруйска</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">21.04.2016 - 24.04.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                  <div class="swiper-slide"><a class="content-card content-card_main" href="#">
+                      <div class="content-card__image"><img src="images/afisha-3.jpg" alt="afisha-3.jpg"/></div>
+                      <div class="content-card__head">
+                        <div class="content-card__tags"><span class="card-dags">Концерт</span></div>
+                        <div class="content-card__activity">
+                        </div>
+                      </div>
+                      <div class="content-card__body content-card__body_main">
+                        <h2 class="content-card__title content-card__title_main">Образцовый ансамбль танца «Чабарок». Отчетный концерт</h2>
+                        <p class="content-card__desc">«Дворец искусств»</p>
+                        <div class="content-card__more">
+                          <div class="content-card__date">15.05.2016</div>
+                        </div>
+                      </div></a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev affiche-slider-prev swiper-bobr-prev">
+                  <div class="swiper-triangl-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                </div>
+                <div class="swiper-button-next affiche-slider-next swiper-bobr-next">
+                  <div class="swiper-triangl-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </div>
+              </div>
+              <div class="setion-link"><a class="setion-link__item" href="#">в раздел афиша</a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="stretch-wrap"><a class="wikibobr" href="#">WIKIBOBR.BY</a></div>
+      <div class="conten-wrap">
+        <section class="advertising">
+          <h4 hidden>объявления</h4>
+          <div class="section-menu"><a class="section-menu__title" href="#">ОБЪЯВЛЕНИЯ</a>
+            <div class="section-menu__wrap section-menu__wrap_subsection">
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Продам<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Сниму (арендую, возьму на прокат)<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Нуждаюсь в услугах (кроме вакансий)<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Разное<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Куплю<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Меняю<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Ищу человека<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Поздравления<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Сдам (в аренду, на прокат)<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Окажу услуги<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Потери и находки<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Акции, скидки<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Правила раздела<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Способы оплаты<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+          <div class="section-menu-slider advertising-menu-slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="section-menu-slider__slide">
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Продам<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Сниму (арендую, возьму на прокат)<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Нуждаюсь в услугах (кроме вакансий)<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Разное<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Куплю<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="section-menu-slider__slide">
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Меняю<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Ищу человека<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Поздравления<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Сдам (в аренду, на прокат)<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Окажу услуги<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="section-menu-slider__slide">
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Потери и находки<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Акции, скидки<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Правила раздела<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                  <div class="section-menu__item section-menu__item_subsection"><a href="#">Способы оплаты<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev advertising-slider-prev swiper-bobr-prev swiper-bobr-prev_section">
+              <div class="swiper-triangl-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            </div>
+            <div class="swiper-button-next advertising-slider-next swiper-bobr-next swiper-bobr-next_section">
+              <div class="swiper-triangl-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            </div>
+          </div>
+          <div class="wrap-card">
+            <div class="side-bar"><a class="side-bar-item side-bar-item_advertising" href="">
+                <div class="side-bar-item__image"><img src="images/mazda.jpg" alt="mazda.jpg"/></div>
+                <div class="side-bar-item__body">
+                  <p class="side-bar-item__date side-bar-item__date_advertising">16.04.2016 № 2814785</p>
+                  <h3 class="side-bar-item__title side-bar-item__title_advertising">Продам Мазду</h3>
+                  <p class="side-bar-item__desc side-bar-item__desc_advertising">Продам Мазду 323 1996 г.в. 1.5 i серый металик. Г.у, ц.з сигнализация. Сел и поехал. 1800 торг. Хороший автомобиль для девушки.</p>
+                  <div class="side-bar-item__footer">
+                    <div class="side-bar-item__tags"><span>Продам / Транспортные средства</span></div>
+                    <div class="side-bar-item__activity">
+                      <div class="side-bar-item__comment"><span class="side-bar-item-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="side-bar-item-comment-count">1</span></div>
+                    </div>
+                  </div>
+                </div></a>
+              <div class="side-bar-menu"><a class="side-bar-menu__link" href="">Подать объявление</a><a class="side-bar-menu__link" href="">Объявления на карте</a><a class="side-bar-menu__link" href="">Последние комментарии</a><a class="side-bar-menu__greetings" href="#"><img src="images/reclame-3.jpg" alt="reclame-3.jpg"/></a><a class="reclame-btn" href="#">Реклама </a>
+                <div class="reclame-wrap"><a class="reclame-item" href="#"><img src="images/reclame-2.jpg" alt="reclame-2.jpg"/></a><a class="reclame-item" href="#"><img src="images/reclame-4.jpg" alt="reclame-4.jpg"/></a>
+                </div>
+              </div>
+            </div>
+            <div class="main-content main-content_advertising">
+              <div class="advertising-block__wrap">
+                <h5 class="advertising-block__title">ПОЗДРАВЛЕНИЯ</h5>
+              </div>
+              <div class="advertising-item-wrap"><a class="advertising-item advertising-item_with-photo" href="#">
+                  <div class="advertising-item__photo"><img src="images/motoblock.jpg" alt="motoblock.jpg"/></div>
+                  <div class="advertising-item__content">
+                    <h5 class="advertising-item__title">мотоблок,культиватор</h5>
+                    <p class="advertising-item__desc">Качественный ремонт НОУТБУКОВ и КОМПЬЮТЕРНОЙ ТЕХНИКИ любой сложности на самом современном р...</p>
+                    <div class="advertising-item__footer">
+                      <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Продам</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span><span class="advertising-item__tags">Транспортные средства</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                      </div>
+                      <div class="advertising-item__info">
+                        <div class="advertising-item__date">10.04.2016</div>
+                        <div class="advertising-item__number">№ 3012674</div>
+                        <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">3</span></div>
+                      </div>
+                    </div>
+                  </div></a><a class="advertising-item advertising-item_no-photo" href="#">
+                  <h5 class="advertising-item__title">Сдам квартиру,1-комнатную, частично с мебелью</h5>
+                  <p class="advertising-item__desc">Сдам 1-комнатную квартиру на длительный срок в районе ТЦ &quot;Корона&quot;,6 этаж,9-ти этажного дома,балкон,сан-узел раздельный,хороший ремонт,интернет,кабельное ТВ,частично с мебелью. Без животных! официальный договор.</p>
+                  <div class="advertising-item__footer">
+                    <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Сдам (в аренду, на прокат)</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                    </div>
+                    <div class="advertising-item__info">
+                      <div class="advertising-item__date">10.04.2016</div>
+                      <div class="advertising-item__number">№ 3012674</div>
+                      <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">32</span></div>
+                    </div>
+                  </div></a><a class="advertising-item advertising-item_with-photo" href="#">
+                  <div class="advertising-item__photo"><img src="images/remont.jpg" alt="remont.jpg"/></div>
+                  <div class="advertising-item__content">
+                    <h5 class="advertising-item__title">РЕМОНТ НОУТБУКОВ, МОНИТОРОВ, ПЭВМ. ЗАПРАВКА КАРТРИДЖЕЙ. ГАРАНТИЯ ASUS, SAMSUNG, EPSON</h5>
+                    <p class="advertising-item__desc">Качественный ремонт НОУТБУКОВ и КОМПЬЮТЕРНОЙ ТЕХНИКИ любой сложности на самом современном р...</p>
+                    <div class="advertising-item__footer">
+                      <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Ремонт</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                      </div>
+                      <div class="advertising-item__info">
+                        <div class="advertising-item__date">10.04.2016</div>
+                        <div class="advertising-item__number">№ 3012674</div>
+                        <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">1</span></div>
+                      </div>
+                    </div>
+                  </div></a>
+                <div class="setion-link"><a class="setion-link__item" href="#">в раздел поздравления</a></div>
+              </div>
+              <div class="advertising-block__wrap">
+                <h5 class="advertising-block__title">АКЦИИ, СКИДКИ</h5>
+              </div>
+              <div class="advertising-item-wrap"><a class="advertising-item advertising-item_with-photo" href="#">
+                  <div class="advertising-item__photo"><img src="images/motoblock.jpg" alt="motoblock.jpg"/></div>
+                  <div class="advertising-item__content">
+                    <h5 class="advertising-item__title">мотоблок,культиватор</h5>
+                    <p class="advertising-item__desc">Качественный ремонт НОУТБУКОВ и КОМПЬЮТЕРНОЙ ТЕХНИКИ любой сложности на самом современном р...</p>
+                    <div class="advertising-item__footer">
+                      <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Продам</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span><span class="advertising-item__tags">Транспортные средства</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                      </div>
+                      <div class="advertising-item__info">
+                        <div class="advertising-item__date">10.04.2016</div>
+                        <div class="advertising-item__number">№ 3012674</div>
+                        <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">10</span></div>
+                      </div>
+                    </div>
+                  </div></a><a class="advertising-item advertising-item_no-photo" href="#">
+                  <h5 class="advertising-item__title">Сдам квартиру,1-комнатную, частично с мебелью</h5>
+                  <p class="advertising-item__desc">Сдам 1-комнатную квартиру на длительный срок в районе ТЦ &quot;Корона&quot;,6 этаж,9-ти этажного дома,балкон,сан-узел раздельный,хороший ремонт,интернет,кабельное ТВ,частично с мебелью. Без животных! официальный договор.</p>
+                  <div class="advertising-item__footer">
+                    <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Сдам (в аренду, на прокат)</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                    </div>
+                    <div class="advertising-item__info">
+                      <div class="advertising-item__date">10.04.2016</div>
+                      <div class="advertising-item__number">№ 3012674</div>
+                      <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">21</span></div>
+                    </div>
+                  </div></a>
+                <div class="setion-link"><a class="setion-link__item" href="#">в раздел "акции и скидки"</a></div>
+              </div>
+              <div class="advertising-block__wrap">
+                <h5 class="advertising-block__title">ПОТЕРИ И НАХОДКИ</h5>
+              </div>
+              <div class="advertising-item-wrap"><a class="advertising-item advertising-item_no-photo" href="#">
+                  <h5 class="advertising-item__title">Сдам квартиру,1-комнатную, частично с мебелью</h5>
+                  <p class="advertising-item__desc">Сдам 1-комнатную квартиру на длительный срок в районе ТЦ &quot;Корона&quot;,6 этаж,9-ти этажного дома,балкон,сан-узел раздельный,хороший ремонт,интернет,кабельное ТВ,частично с мебелью. Без животных! официальный договор.</p>
+                  <div class="advertising-item__footer">
+                    <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Сдам (в аренду, на прокат)</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                    </div>
+                    <div class="advertising-item__info">
+                      <div class="advertising-item__date">10.04.2016</div>
+                      <div class="advertising-item__number">№ 3012674</div>
+                      <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">7</span></div>
+                    </div>
+                  </div></a><a class="advertising-item advertising-item_with-photo" href="#">
+                  <div class="advertising-item__photo"><img src="images/motoblock.jpg" alt="motoblock.jpg"/></div>
+                  <div class="advertising-item__content">
+                    <h5 class="advertising-item__title">мотоблок,культиватор</h5>
+                    <p class="advertising-item__desc">Качественный ремонт НОУТБУКОВ и КОМПЬЮТЕРНОЙ ТЕХНИКИ любой сложности на самом современном р...</p>
+                    <div class="advertising-item__footer">
+                      <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Продам</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span><span class="advertising-item__tags">Транспортные средства</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                      </div>
+                      <div class="advertising-item__info">
+                        <div class="advertising-item__date">10.04.2016</div>
+                        <div class="advertising-item__number">№ 3012674</div>
+                        <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">8</span></div>
+                      </div>
+                    </div>
+                  </div></a><a class="advertising-item advertising-item_no-photo" href="#">
+                  <h5 class="advertising-item__title">Сдам квартиру,1-комнатную, частично с мебелью</h5>
+                  <p class="advertising-item__desc">Сдам 1-комнатную квартиру на длительный срок в районе ТЦ &quot;Корона&quot;,6 этаж,9-ти этажного дома,балкон,сан-узел раздельный,хороший ремонт,интернет,кабельное ТВ,частично с мебелью. Без животных! официальный договор.</p>
+                  <div class="advertising-item__footer">
+                    <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Сдам (в аренду, на прокат)</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                    </div>
+                    <div class="advertising-item__info">
+                      <div class="advertising-item__date">10.04.2016</div>
+                      <div class="advertising-item__number">№ 3012674</div>
+                      <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">3</span></div>
+                    </div>
+                  </div></a>
+                <div class="setion-link"><a class="setion-link__item" href="#">в раздел объявления</a><a class="setion-link__item" href="#">в раздел "потери и находки"</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="conten-wrap conten-wrap_bg-grey conten-wrap_add-p">
+        <section class="last-change-catalog">
+          <h4 hidden>последние изменения каталога</h4><a class="subsection-title subsection-title_change-catalog" href="#">ПОСЛЕДНИЕ ИЗМЕНЕНИЯ КАТАЛОГА</a><a class="last-change-catalog__item" href="#">
+            <div class="last-change-catalog__photo"><img src="images/last-comment-icon-1.jpg" alt="last-comment-icon-1.jpg"/></div>
+            <div class="last-change-catalog__info">
+              <div class="last-change-catalog__date">11:18 26.04.2016</div>
+              <div class="last-change-catalog__desc">Сервисный центр Энтер-Компьютерс». Обслуживание и профессиональный ремонт офисной техники</div>
+            </div></a><a class="last-change-catalog__item" href="#">
+            <div class="last-change-catalog__photo"><img src="images/lady-icon.jpg" alt="lady-icon.jpg"/></div>
+            <div class="last-change-catalog__info">
+              <div class="last-change-catalog__date">11:18 26.04.2016</div>
+              <div class="last-change-catalog__desc">Lady in Red. Студия красоты</div>
+            </div></a><a class="last-change-catalog__item" href="#">
+            <div class="last-change-catalog__photo"><img src="images/last-comment-icon-1.jpg" alt="last-comment-icon-1.jpg"/></div>
+            <div class="last-change-catalog__info">
+              <div class="last-change-catalog__date">11:18 26.04.2016</div>
+              <div class="last-change-catalog__desc">Сервисный центр Энтер-Компьютерс». Обслуживание и профессиональный ремонт офисной техники</div>
+            </div></a><a class="last-change-catalog__item" href="#">
+            <div class="last-change-catalog__photo"><img src="images/logo-org.jpg" alt="logo-org.jpg"/></div>
+            <div class="last-change-catalog__info">
+              <div class="last-change-catalog__date">11:18 26.04.2016</div>
+              <div class="last-change-catalog__desc">Сервисный центр Энтер-Компьютерс». Обслуживание и профессиональный ремонт офисной техники</div>
+            </div></a><a class="last-change-catalog__item" href="#">
+            <div class="last-change-catalog__photo"><img src="images/logo-org.jpg" alt="logo-org.jpg"/></div>
+            <div class="last-change-catalog__info">
+              <div class="last-change-catalog__date">11:18 26.04.2016</div>
+              <div class="last-change-catalog__desc">Профессиональный ремонт и настройка компьютеров с выездом на дом.</div>
+            </div></a><a class="last-change-catalog__item" href="#">
+            <div class="last-change-catalog__photo"><img src="images/lady-icon.jpg" alt="lady-icon.jpg"/></div>
+            <div class="last-change-catalog__info">
+              <div class="last-change-catalog__date">11:18 26.04.2016</div>
+              <div class="last-change-catalog__desc">Lady in Red. Студия красоты</div>
+            </div></a>
+          <div class="last-change-catalog__gutter"></div>
+          <div class="setion-link"><a class="setion-link__item" href="#">в раздел каталог организаций</a></div>
+        </section>
+      </div>
+      <div class="stretch-wrap"><a class="wikibobr" href="#">WIKIBOBR.BY</a></div>
+      <div class="conten-wrap">
+        <section class="work">
+          <h4 hidden>работа</h4>
+          <div class="section-menu"><a class="section-menu__title" href="#">работа</a>
+            <div class="section-menu__wrap section-menu__wrap_subsection">
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Вакансии<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Резюме<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Центр занятости<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">О разделе<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Способы оплаты<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+          <div class="wrap-card">
+            <div class="side-bar"><a class="side-bar-item side-bar-item_advertising" href="">
+                <div class="side-bar-item__image"><img src="images/mazda.jpg" alt="mazda.jpg"/></div>
+                <div class="side-bar-item__body">
+                  <p class="side-bar-item__date side-bar-item__date_advertising">16.04.2016 № 2814785</p>
+                  <h3 class="side-bar-item__title side-bar-item__title_advertising">Продам Мазду</h3>
+                  <p class="side-bar-item__desc side-bar-item__desc_advertising">Продам Мазду 323 1996 г.в. 1.5 i серый металик. Г.у, ц.з сигнализация. Сел и поехал. 1800 торг. Хороший автомобиль для девушки.</p>
+                  <div class="side-bar-item__footer">
+                    <div class="side-bar-item__tags"><span>Продам / Транспортные средства</span></div>
+                    <div class="side-bar-item__activity">
+                      <div class="side-bar-item__comment"><span class="side-bar-item-comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="side-bar-item-comment-count">1</span></div>
+                    </div>
+                  </div>
+                </div></a>
+              <div class="side-bar-menu"><a class="side-bar-menu__link" href="">Подать объявление</a><a class="side-bar-menu__link" href="">Объявления на карте</a><a class="side-bar-menu__link" href="">Последние комментарии</a><a class="reclame-btn" href="#">Реклама </a>
+                <div class="reclame-wrap"><a class="reclame-item" href="#"><img src="images/reclame-2.jpg" alt="reclame-2.jpg"/></a>
+                </div>
+              </div>
+            </div>
+            <div class="main-content main-content_work">
+              <div class="advertising-block__wrap">
+                <h5 class="advertising-block__title">вакансии</h5>
+              </div>
+              <div class="advertising-item-wrap"><a class="advertising-item advertising-item_with-photo" href="#">
+                  <div class="advertising-item__photo"><img src="images/motoblock.jpg" alt="motoblock.jpg"/></div>
+                  <div class="advertising-item__content">
+                    <h5 class="advertising-item__title">мотоблок,культиватор</h5>
+                    <p class="advertising-item__desc">Качественный ремонт НОУТБУКОВ и КОМПЬЮТЕРНОЙ ТЕХНИКИ любой сложности на самом современном р...</p>
+                    <div class="advertising-item__footer">
+                      <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Продам</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span><span class="advertising-item__tags">Транспортные средства</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                      </div>
+                      <div class="advertising-item__info">
+                        <div class="advertising-item__date">10.04.2016</div>
+                        <div class="advertising-item__number">№ 3012674</div>
+                        <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">3</span></div>
+                      </div>
+                    </div>
+                  </div></a><a class="advertising-item advertising-item_no-photo" href="#">
+                  <h5 class="advertising-item__title">Сдам квартиру,1-комнатную, частично с мебелью</h5>
+                  <p class="advertising-item__desc">Сдам 1-комнатную квартиру на длительный срок в районе ТЦ &quot;Корона&quot;,6 этаж,9-ти этажного дома,балкон,сан-узел раздельный,хороший ремонт,интернет,кабельное ТВ,частично с мебелью. Без животных! официальный договор.</p>
+                  <div class="advertising-item__footer">
+                    <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Сдам (в аренду, на прокат)</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                    </div>
+                    <div class="advertising-item__info">
+                      <div class="advertising-item__date">10.04.2016</div>
+                      <div class="advertising-item__number">№ 3012674</div>
+                      <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">32</span></div>
+                    </div>
+                  </div></a><a class="advertising-item advertising-item_with-photo" href="#">
+                  <div class="advertising-item__photo"><img src="images/remont.jpg" alt="remont.jpg"/></div>
+                  <div class="advertising-item__content">
+                    <h5 class="advertising-item__title">РЕМОНТ НОУТБУКОВ, МОНИТОРОВ, ПЭВМ. ЗАПРАВКА КАРТРИДЖЕЙ. ГАРАНТИЯ ASUS, SAMSUNG, EPSON</h5>
+                    <p class="advertising-item__desc">Качественный ремонт НОУТБУКОВ и КОМПЬЮТЕРНОЙ ТЕХНИКИ любой сложности на самом современном р...</p>
+                    <div class="advertising-item__footer">
+                      <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Ремонт</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                      </div>
+                      <div class="advertising-item__info">
+                        <div class="advertising-item__date">10.04.2016</div>
+                        <div class="advertising-item__number">№ 3012674</div>
+                        <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">1</span></div>
+                      </div>
+                    </div>
+                  </div></a>
+                <div class="setion-link"><a class="setion-link__item" href="#">в раздел вакансии</a></div>
+              </div>
+              <div class="advertising-block__wrap">
+                <h5 class="advertising-block__title">РЕЗЮМЕ</h5>
+              </div>
+              <div class="advertising-item-wrap"><a class="advertising-item advertising-item_with-photo" href="#">
+                  <div class="advertising-item__photo"><img src="images/motoblock.jpg" alt="motoblock.jpg"/></div>
+                  <div class="advertising-item__content">
+                    <h5 class="advertising-item__title">мотоблок,культиватор</h5>
+                    <p class="advertising-item__desc">Качественный ремонт НОУТБУКОВ и КОМПЬЮТЕРНОЙ ТЕХНИКИ любой сложности на самом современном р...</p>
+                    <div class="advertising-item__footer">
+                      <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Продам</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span><span class="advertising-item__tags">Транспортные средства</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                      </div>
+                      <div class="advertising-item__info">
+                        <div class="advertising-item__date">10.04.2016</div>
+                        <div class="advertising-item__number">№ 3012674</div>
+                        <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">10</span></div>
+                      </div>
+                    </div>
+                  </div></a><a class="advertising-item advertising-item_no-photo" href="#">
+                  <h5 class="advertising-item__title">Сдам квартиру,1-комнатную, частично с мебелью</h5>
+                  <p class="advertising-item__desc">Сдам 1-комнатную квартиру на длительный срок в районе ТЦ &quot;Корона&quot;,6 этаж,9-ти этажного дома,балкон,сан-узел раздельный,хороший ремонт,интернет,кабельное ТВ,частично с мебелью. Без животных! официальный договор.</p>
+                  <div class="advertising-item__footer">
+                    <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Сдам (в аренду, на прокат)</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                    </div>
+                    <div class="advertising-item__info">
+                      <div class="advertising-item__date">10.04.2016</div>
+                      <div class="advertising-item__number">№ 3012674</div>
+                      <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">21</span></div>
+                    </div>
+                  </div></a><a class="advertising-item advertising-item_with-photo" href="#">
+                  <div class="advertising-item__photo"><img src="images/motoblock.jpg" alt="motoblock.jpg"/></div>
+                  <div class="advertising-item__content">
+                    <h5 class="advertising-item__title">мотоблок,культиватор</h5>
+                    <p class="advertising-item__desc">Качественный ремонт НОУТБУКОВ и КОМПЬЮТЕРНОЙ ТЕХНИКИ любой сложности на самом современном р...</p>
+                    <div class="advertising-item__footer">
+                      <div class="advertising-item__tags-wrap"><span class="advertising-item__tags">Продам</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span><span class="advertising-item__tags">Транспортные средства</span><span class="advertising-item__devider">&nbsp;/&nbsp;</span>
+                      </div>
+                      <div class="advertising-item__info">
+                        <div class="advertising-item__date">10.04.2016</div>
+                        <div class="advertising-item__number">№ 3012674</div>
+                        <div class="advertising-item__comment-wrap"><span class="advertising-item__comment-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="advertising-item__comment-count">10</span></div>
+                      </div>
+                    </div>
+                  </div></a>
+                <div class="setion-link"><a class="setion-link__item" href="#">в раздел работа</a><a class="setion-link__item" href="#">в раздел резюме</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="conten-wrap conten-wrap_bg-grey conten-wrap_add-p wrap-card">
+        <div class="web-cam"><a class="subsection-title subsection-title_web-cam" href="#">ВЕБ-КАМЕРА</a>
+          <div class="web-cam__wrap">
+            <div class="iv-embed" style="margin:0 auto;padding:0;border:0;width:100%;">
+              <div class="iv-v" style="display:block;margin:0;padding:1px;border:0;background:#000;">
+                <iframe class="iv-i" style="display:block;margin:0;padding:0;border:0;" src="https://open.ivideon.com/embed/v2/?server=100-kIhgTBeKxb1wOkFwpvFdGg&amp;amp;camera=0&amp;amp;width=&amp;amp;height=&amp;amp;lang=ru" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <div class="iv-b" style="display:block;margin:0;padding:0;border:0;">
+                <script src="https://open.ivideon.com/embed/v2/embedded.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-index"><a class="subsection-title subsection-title_map-index" href="#">КАРТА БОБРУЙСКА</a>
+          <div class="map-index__wrap">
+            <iframe src="https://yandex.by/map-widget/v1/-/CBUwaOFkSB"></iframe>
+          </div>
+        </div>
+        <div class="horoscope"><a class="subsection-title subsection-title_horoscope" href="#">ГОРОСКОП</a>
+          <div class="horoscope__wrap"><img src="images/horoscope.jpg" alt="horoscope.jpg"/></div>
+        </div>
+      </div>
+      <div class="stretch-wrap"><a class="wikibobr" href="#">WIKIBOBR.BY</a></div>
+      <div class="conten-wrap">
+        <section class="photogallery">
+          <h4 hidden>фотогалерея</h4>
+          <div class="section-menu"><a class="section-menu__title" href="#">ФОТОГАЛЕРЕЯ</a>
+            <div class="section-menu__wrap section-menu__wrap_subsection">
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Новые<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Лучшие по рейтингу<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Город Бобруйск<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Ночные клубы<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Животный мир<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Праздникик, концерты<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Природа<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Дети<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Девушки<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Мужчины<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Конкурсы<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Машины<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Путешествия и отдых<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Наша Беларусь<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Разное<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Прикольное<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Школьные<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Спорт<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Бобруйчане<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+              <div class="section-menu__item section-menu__item_subsection"><a href="#">Сферические 360° панорамы<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+          <div class="swiper-container photogallery-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a class="photogallery-item" href="#">
+                  <div class="photogallery-item__photo"><img src="images/album-item-1.jpg" alt="album-item-1.jpg"/></div>
+                  <div class="photogallery-item__info">
+                    <div class="photogallery-item__date"><span>15.05.2016 </span></div>
+                    <div class="photogallery-item__title">
+                      <h5>«Би-2»: «Квартирник» </h5>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="photogallery-item" href="#">
+                  <div class="photogallery-item__photo"><img src="images/album-item-2.jpg" alt="album-item-2.jpg"/></div>
+                  <div class="photogallery-item__info">
+                    <div class="photogallery-item__date"><span>15.05.2016 </span></div>
+                    <div class="photogallery-item__title">
+                      <h5>Perfect Wedding 2016</h5>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="photogallery-item" href="#">
+                  <div class="photogallery-item__photo"><img src="images/album-item-3.jpg" alt="album-item-3.jpg"/></div>
+                  <div class="photogallery-item__info">
+                    <div class="photogallery-item__date"><span>15.05.2016 </span></div>
+                    <div class="photogallery-item__title">
+                      <h5>«New look»</h5>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="photogallery-item" href="#">
+                  <div class="photogallery-item__photo"><img src="images/album-item-1.jpg" alt="album-item-1.jpg"/></div>
+                  <div class="photogallery-item__info">
+                    <div class="photogallery-item__date"><span>15.05.2016 </span></div>
+                    <div class="photogallery-item__title">
+                      <h5>«Би-2»: «Квартирник» </h5>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="photogallery-item" href="#">
+                  <div class="photogallery-item__photo"><img src="images/album-item-2.jpg" alt="album-item-2.jpg"/></div>
+                  <div class="photogallery-item__info">
+                    <div class="photogallery-item__date"><span>15.05.2016 </span></div>
+                    <div class="photogallery-item__title">
+                      <h5>Perfect Wedding 2016</h5>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="photogallery-item" href="#">
+                  <div class="photogallery-item__photo"><img src="images/album-item-3.jpg" alt="album-item-3.jpg"/></div>
+                  <div class="photogallery-item__info">
+                    <div class="photogallery-item__date"><span>15.05.2016 </span></div>
+                    <div class="photogallery-item__title">
+                      <h5>«New look»</h5>
+                    </div>
+                  </div></a>
+              </div>
+            </div>
+            <div class="swiper-button-prev photogallery-slider-prev swiper-bobr-prev">
+              <div class="swiper-triangl-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            </div>
+            <div class="swiper-button-next photogallery-slider-next swiper-bobr-next">
+              <div class="swiper-triangl-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            </div>
+          </div>
+          <div class="setion-link"><a class="setion-link__item" href="#">в раздел фотогалерея</a></div>
+        </section>
+      </div>
+      <div class="conten-wrap conten-wrap_bg-grey">
+        <section class="videogallery">
+          <h4 hidden>видеогалерея</h4><a class="subsection-title subsection-title_videogallery" href="#">ВИДЕОГАЛЕРЕЯ</a>
+          <div class="swiper-container videogallery-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="videogallery__item" data-video="RFRdUNaLSsQ">
+                  <div class="videogallery__photo"><img src="https://img.youtube.com/vi/RFRdUNaLSsQ/sddefault.jpg" alt="Кастинг &quot;Миссис BOBR.BY&quot;"/></div>
+                  <div class="videogallery__info">
+                    <div class="videogallery__date">06.06.2016</div>
+                    <div class="videogallery__desc">Кастинг &quot;Миссис BOBR.BY&quot;</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videogallery__item" data-video="im-zlifOHlk">
+                  <div class="videogallery__photo"><img src="https://img.youtube.com/vi/im-zlifOHlk/sddefault.jpg" alt="Фотосъёмка с детьми"/></div>
+                  <div class="videogallery__info">
+                    <div class="videogallery__date">01.04.2016</div>
+                    <div class="videogallery__desc">Фотосъёмка с детьми</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videogallery__item" data-video="1YkVYRtrAxA">
+                  <div class="videogallery__photo"><img src="https://img.youtube.com/vi/1YkVYRtrAxA/sddefault.jpg" alt="Танцевальный марафон"/></div>
+                  <div class="videogallery__info">
+                    <div class="videogallery__date">06.06.2016</div>
+                    <div class="videogallery__desc">Танцевальный марафон</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videogallery__item" data-video="Hn2s8Cpz0Ic">
+                  <div class="videogallery__photo"><img src="https://img.youtube.com/vi/Hn2s8Cpz0Ic/sddefault.jpg" alt="Полуфинал конкурса &quot;Миссис BOBR.BY&quot;"/></div>
+                  <div class="videogallery__info">
+                    <div class="videogallery__date">27.10.2016</div>
+                    <div class="videogallery__desc">Полуфинал конкурса &quot;Миссис BOBR.BY&quot;</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videogallery__item" data-video="8BDKFrNya-k">
+                  <div class="videogallery__photo"><img src="https://img.youtube.com/vi/8BDKFrNya-k/sddefault.jpg" alt="Самый вкусный мастер-класс"/></div>
+                  <div class="videogallery__info">
+                    <div class="videogallery__date">11.09.2016</div>
+                    <div class="videogallery__desc">Самый вкусный мастер-класс</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videogallery__item" data-video="kPfj2MMCLrc">
+                  <div class="videogallery__photo"><img src="https://img.youtube.com/vi/kPfj2MMCLrc/sddefault.jpg" alt="&quot;Миссис BOBR.by&quot; Салон &quot;Марижель&quot;"/></div>
+                  <div class="videogallery__info">
+                    <div class="videogallery__date">06.06.2016</div>
+                    <div class="videogallery__desc">&quot;Миссис BOBR.by&quot; Салон &quot;Марижель&quot;</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videogallery__item" data-video="pz8sxlcKQRQ">
+                  <div class="videogallery__photo"><img src="https://img.youtube.com/vi/pz8sxlcKQRQ/sddefault.jpg" alt="&quot;Миссис BOBR.BY&quot; Бутик &quot;ЕВА&quot;;"/></div>
+                  <div class="videogallery__info">
+                    <div class="videogallery__date">08.08.2016</div>
+                    <div class="videogallery__desc">&quot;Миссис BOBR.BY&quot; Бутик &quot;ЕВА&quot;;</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videogallery__item" data-video="B8k-sQ3nAbQ">
+                  <div class="videogallery__photo"><img src="https://img.youtube.com/vi/B8k-sQ3nAbQ/sddefault.jpg" alt="Йога-марафон для участниц конкурса"/></div>
+                  <div class="videogallery__info">
+                    <div class="videogallery__date">14.09.2016</div>
+                    <div class="videogallery__desc">Йога-марафон для участниц конкурса</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev videogallery-slider-prev swiper-bobr-prev">
+              <div class="swiper-triangl-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            </div>
+            <div class="swiper-button-next videogallery-slider-next swiper-bobr-next">
+              <div class="swiper-triangl-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+            </div>
+          </div>
+          <div class="setion-link"><a class="setion-link__item" href="#">в раздел видеогалерея</a></div>
+        </section>
+      </div>
+      <div class="stretch-wrap navigator">
+        <div class="swiper-container navigator-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#f76766;"><a href="#" style="color:#f76766;"><i class="fa fa-home" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#69bbaf;"><a href="#" style="color:#69bbaf;"><i class="fa fa-cog" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#a8b959;"><a href="#" style="color:#a8b959;"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#b889b7;"><a href="#" style="color:#b889b7;"><i class="fa fa-map-marker" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#f9802d;"><a href="#" style="color:#f9802d;"><i class="fa fa-undo" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#fcd053;"><a href="#" style="color:#fcd053;"><i class="fa fa-folder-open" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#a8b959;"><a href="#" style="color:#a8b959;"><i class="fa fa-star" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#b889b7;"><a href="#" style="color:#b889b7;"><i class="fa fa-music" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#f76766;"><a href="#" style="color:#f76766;"><i class="fa fa-wifi" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#f9802d;"><a href="#" style="color:#f9802d;"><i class="fa fa-comment" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#fcd053;"><a href="#" style="color:#fcd053;"><i class="fa fa-headphones" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#69bbaf;"><a href="#" style="color:#69bbaf;"><i class="fa fa-floppy-o" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#fcd053;"><a href="#" style="color:#fcd053;"><i class="fa fa-backward" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#f76766;"><a href="#" style="color:#f76766;"><i class="fa fa-forward" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#f9802d;"><a href="#" style="color:#f9802d;"><i class="fa fa-play" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#a8b959;"><a href="#" style="color:#a8b959;"><i class="fa fa-stop" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="navigator__icon" style="border-color:#69bbaf;"><a href="#" style="color:#69bbaf;"><i class="fa fa-pause" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+          <div class="swiper-button-prev navigator-slider-prev">
+            <svg width="12px" height="60px">
+              <image xlink:href="images/navigator-arrow-l.svg" src="images/navigator-arrow-l.png" width="12px" height="60px"></image>
+            </svg>
+          </div>
+          <div class="swiper-button-next navigator-slider-next">
+            <svg width="12px" height="60px">
+              <image xlink:href="images/navigator-arrow-r.svg" src="images/navigator-arrow-r.png" width="12px" height="60px"></image>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="conten-wrap">
+        <div class="our-resources">
+          <h4 class="our-resources__title">НАШИ РЕСУРСЫ</h4>
+          <div class="wrap-card our-resources__wrap"><a class="our-resources__link" href="#"><i class="fa fa-comments" aria-hidden="true"></i>Последние комментарии</a><a class="our-resources__link" href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>Работа в Бобруйске</a><a class="our-resources__link" href="#"><i class="fa fa-percent" aria-hidden="true"></i>Акции, скидки</a><a class="our-resources__link" href="#"><i class="fa fa-university" aria-hidden="true"></i>Каталог организаций</a><a class="our-resources__link" href="#"><i class="fa fa-question" aria-hidden="true"></i>Наши опросы</a><a class="our-resources__link" href="#"><i class="fa fa-globe" aria-hidden="true"></i>Сферические 360° панорамы Бобруйска</a><a class="our-resources__link" href="#"><i class="fa fa-dollar" aria-hidden="true"></i>Курсы валют по г. Бобруйску</a><a class="our-resources__link" href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>Фотогалерея</a><a class="our-resources__link" href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>Online-сервисы Бобруйска</a><a class="our-resources__link" href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i>Реклама на сайте</a><a class="our-resources__link" href="#"><i class="fa fa-video-camera" aria-hidden="true"></i>Web-камера Бобруйска</a><a class="our-resources__link" href="#"><i class="fa fa-file-text" aria-hidden="true"></i>Пресс-релизы</a><a class="our-resources__link" href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Карта Бобруйска</a><a class="our-resources__link" href="#"><i class="fa fa-phone" aria-hidden="true"></i>Телефоны первой необходимости города Бобруйска</a><a class="our-resources__link" href="#"><i class="fa fa-bus" aria-hidden="true"></i>Расписание движения транспорта</a></div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="conten-wrap_bg-grey conten-wrap conten-wrap_add-p">
+          <h4>ОФИС</h4>
+          <div class="wrap-card">
+            <div class="footer__contact">
+              <div class="footer__adress">
+                <p>213826, г. Бобруйск, ул. Карла Либкнехта, 25;</p>
+                <p>Контактные телефоны: <a href="tel:+375291205550">+375291205550</a><a href="tel:+375225707044">+375225707044</a></p>
+              </div>
+              <div class="footer__map">
+                <p>Посмотреть на карте:</p>
+                <iframe src="https://yandex.ua/map-widget/v1/-/CBU9m8HTWA"></iframe>
+              </div>
+            </div>
+            <div class="footer__info">
+              <div class="footer__info-wrap">
+                <div class="footer__social"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+                <div class="footer__menu"><a href="#">О нас</a><a href="#">Реклама на портале</a><a href="#">Написать письмо</a></div>
+                <div class="footer__company">
+                  <h6>Юридические данные:</h6>
+                  <p>	Частное унитарное предприятие по оказанию услуг «Бобрбай»;<br/>УНП 790676313, Свидетельство о госрегистрации<br/>№790676313 от 11.11.2011 выдано Бобруйским горисполкомом;<br/>Юр.адрес: 213826, г. Бобруйск, ул. Чонгарская, 81/25;<br/>Почтовый адрес: 213826, г. Бобруйск, ул. Карла Либкнехта, 25;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright">© 2006-2016 «BOBR.by»</div>
+        </div>
+      </footer>
+    </div>
+    <div class="videogallery-popup" style="display:none;">
+      <button class="videogallery-popup__close"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <iframe></iframe>
+    </div>
+    <div class="menu-bg-wrapper close-popup" style="display:none;"></div>
+    <div class="user-menu-popup">
+      <button class="menu-popup-btn close-popup"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <div class="user-menu-popup__authorized" style="display:none;">
+        <div class="user-menu-popup__profile">
+          <div class="user-menu-popup__ava"><img src="images/user-ava.png" alt="user_avatar"></div>
+          <div class="user-menu-popup__name"><span>Администратор</span></div>
+        </div>
+        <nav class="user-menu-popup__nav"><a class="user-menu-popup__link" href="">Личный кабинет</a><a class="user-menu-popup__link" href="">Профиль</a><a class="user-menu-popup__link" href="">Почта</a><a class="user-menu-popup__link" href="">Выйти</a></nav>
+      </div>
+      <div class="user-menu-popup__unauthorized">
+        <div class="user-menu-popup__profile">
+          <div class="user-menu-popup__ava">
+            <div class="user-menu-popup__guest"><i class="fa fa-user-secret" aria-hidden="true"></i></div>
+          </div>
+          <div class="user-menu-popup__name"><span>Авторизируйтесь</span></div>
+        </div>
+        <form class="header-user__form" action="/action">
+          <div class="header-user__input-wrap">
+            <input type="text" required>
+            <input type="password" required><a class="header-user__lost-password" href="">Не помню</a>
+          </div>
+          <div class="header-user__btn-wrap">
+            <button class="header-menu__sub-btn" type="submit">Войти</button><a class="header-menu__soc-btn" href="#vk"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="header-menu__soc-btn" href=""><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a><a class="header-user__registration" href="#">Регистрация</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <button class="menu-popup-btn close-popup"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <nav class="mobile-menu__nav"><a class="mobile-menu__link" href="#">Новости</a><a class="mobile-menu__link" href="#">Наш Бобруйск</a><a class="mobile-menu__link" href="#">Каталог организаций</a><a class="mobile-menu__link" href="#">Отдых</a><a class="mobile-menu__link" href="#">Работа</a><a class="mobile-menu__link" href="#">Объявления</a><a class="mobile-menu__link" href="#">Афиша</a><a class="mobile-menu__link" href="#">Общение</a><a class="mobile-menu__link" href="#">Навигатор</a><a class="mobile-menu__link" href="#">О нас</a><a class="mobile-menu__link" href="#">Написать письмо</a><a class="mobile-menu__link" href="#">Реклама на портале</a></nav>
+      <form class="mobile-menu__form" action="/action">
+        <input type="search" placeholder="поиск">
+        <button class="header-menu__sub-btn" type="submit">Найти</button>
+      </form>
+    </div>
+    <button class="button-up" style="display:none;"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+    <script src="js/libs.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

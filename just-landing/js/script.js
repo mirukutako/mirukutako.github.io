@@ -4,7 +4,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		var destination = $('.part-number-6').offset().top;
 		$('html, body').animate({scrollTop: destination}, 1000);
-        return false;
+		return false;
 	});
 
 	var win_h = $(window).height(),
