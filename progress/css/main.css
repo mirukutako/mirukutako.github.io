@@ -229,6 +229,24 @@ li {
   color: #fff;
   font-size: 30px;
 }
+.start-progress {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  background-color: #1a1a1a;
+}
+.start-progress__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 35vw;
+}
 /*** FOOTER-BLOCK ***/
 .footer-media {
   position: fixed;
