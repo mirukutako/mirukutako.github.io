@@ -51,7 +51,7 @@ $(document).ready(function() {
 		slidesPerView: 3,
 		slidesPerColumn: 2,
 		slidesPerGroup: 3,
-		spaceBetween: 30,
+		spaceBetween: 15,
 		nextButton: '.news-slider-next',
 		prevButton: '.news-slider-prev',
 		breakpoints: {
@@ -77,7 +77,7 @@ $(document).ready(function() {
 		slidesPerView: 3,
 		slidesPerColumn: 2,
 		slidesPerGroup: 3,
-		spaceBetween: 30,
+		spaceBetween: 15,
 		nextButton: '.affiche-slider-next',
 		prevButton: '.affiche-slider-prev',
 		breakpoints: {
@@ -185,6 +185,7 @@ $(document).ready(function() {
 
 	$(function(){
 		$(window).scroll(function() {
+			
 			if ($(this).scrollTop() >= main_menu_offset) {
 				$('.main-menu').addClass('main-menu_fixed');
 				$('.clone-nav').show();
