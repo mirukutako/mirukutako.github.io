@@ -1,22 +1,24 @@
-// new funcrtion
-$('.js-mob-menu').on('click touchstart', function(e){
+//new funcrtion
+
+$('.js-mob-menu').off('click touchstart').on('click ', function(e){
     $('.mob-menu').toggleClass('active');
     $('html').toggleClass('menu-active');
 })
 
-$('.mob-menu .wrap-list').on('click touchstart', function(e){
+$('.mob-menu .wrap-list').off('click ').on('click touchstart', function(e){
     if($(this).hasClass('visible')){
         $(this).removeClass('visible');
+        return false;
     } else {
-        $('.mob-menu .wrap-list').removeClass('visible');
-        $(this).addClass('visible');
+        $(this).addClass('visible').siblings().removeClass('visible');
+        return false;
     }
 });
-
-// end new funcrtion
+//new funcrtion
 
 
 // helpers func for class 
+
 function addEvent(el, event, callback) {
     var check1 = el === window || el === document;
 
@@ -1049,8 +1051,8 @@ var ratings = new Rating({
     activeLine: 'star-ratings-bottom'
 });
 
-$.validate({
-    form: '.form-field'});
+// $.validate({
+//     form: '.form-field',
 //     onSuccess: function() {
 //         var forms = document.querySelectorAll('.form-field'),
 //             rating = ratings.valueRating;
