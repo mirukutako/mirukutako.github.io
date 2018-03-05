@@ -27,9 +27,34 @@ mob_menu.each(function(){
             return false;
         }
     });
+});
+
+var block = $('.mob-menu-btn-wrap'),
+    window_w = $(window).width();
+
+if (window_w <= 940){
+    $(window).scroll(function() {
+        if($(window).scrollTop() > 150) {
+            block.addClass('fixed'); 
+        } else {
+            block.removeClass('fixed');
+        }
+    });
+}
+$('.phone-list-js').on('click', function(){
+    $(this).find('.phone-list').toggleClass('phone-list-active');
 })
-// $('.mob-menu .wrap-list')
-//new funcrtion
+$(document).on('click', function(e){
+    var div = $(".phone-list-js"); 
+    if (!div.is(e.target) && div.has(e.target).length === 0) {
+        $('.phone-list').removeClass('phone-list-active');
+    }
+});
+$('.accard-title').on('click', function(){
+    $(this).toggleClass('accard-title-active')
+    $(this).next().toggleClass('accard-wrap-active');
+});
+//end new funcrtion
 
 
 // helpers func for class 
